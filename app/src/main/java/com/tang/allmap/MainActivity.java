@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     AMap aMap = null;
     public static  String tag = "MainActivity";
 
-
+/*测试提交代码*/
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(R.style.AppTheme);
