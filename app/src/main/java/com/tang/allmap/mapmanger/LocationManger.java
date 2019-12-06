@@ -53,10 +53,14 @@ public class LocationManger {
         public void onLocationChanged(AMapLocation aMapLocation) {
             if (isDebuge)
                 Log.e(tag,"----onLocationChanged----");
-            Log.e(tag,"-----locationChange-------getAddress="
-                    + aMapLocation.getAddress());
+            String address = aMapLocation.getAddress();
+
+            Log.e(tag,"-----locationChange-------address=" + address);
+
             Log.e(tag,"-----locationChange-------getLatitude="
                     + aMapLocation.getLatitude());
+            Log.e(tag,"-----locationChange-------getLongitude="
+                    + aMapLocation.getLongitude());
             if (mAMapLocation==null)
                 mAMapLocation = aMapLocation;
             if (mLocationChange!=null)
